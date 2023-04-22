@@ -1,7 +1,9 @@
 import numpy as np
 import math
-
-
+"""
+@author： Jiatong Niu
+"""
+## Calculate the degree of freedom and degree of constrain and update information in ENL
 def assign_BCs(NL, ENL):
     PD = np.size(NL, 1)
     NoN = np.size(NL, 0)
@@ -29,7 +31,7 @@ def assign_BCs(NL, ENL):
     DOCs = abs(DOCs)
     return (ENL, DOFs, DOCs)
 
-
+# Calculate the stiffness , the imeplementation of this part refers to an online FEM tutorial but all hand written by author
 def stiffness(ENL, Element_list, Node_list, E, A):
     NOE = np.size(Element_list, 0)
     NPE = np.size(Element_list, 1)
@@ -65,6 +67,7 @@ def element_stiffness(nl, ENL, E, A):
                                [-c ** 2, -c * s, c ** 2, c * s],
                                [-c * s, -s ** 2, c * s, s ** 2]])
     return k
+#############################################################################
 
 def calculate_force(ENL,Node_list):
     PD = np.size(Node_list, 1)
