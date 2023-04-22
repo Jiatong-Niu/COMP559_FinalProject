@@ -8,7 +8,7 @@ I strongly recommend run the project with pyCharm as it would help to install pa
 
 Packages included in this project：
 
-FEM: 
+### FEM: 
 
      matplotlib.pyplot
 
@@ -16,7 +16,7 @@ FEM:
      
      tkinter
      
-Shape Maching:
+### Shape Maching:
  
      taichi 
      
@@ -25,7 +25,8 @@ Shape Maching:
 After installing all the packages, run FEM.py for visualizing FEM demo, run shapematching.py for shape matching demo.
 
 # Test cases
-FEM: You can create your own truss demo by changing the initial parameter. Notice that pyCharm ->Setting ->Python Scientific, click the show plots in tool window. This can provide a animated effect in pycharm.
+### FEM: 
+You can create your own truss demo by changing the initial parameter. Notice that pyCharm ->Setting ->Python Scientific, click the show plots in tool window. This can provide a animated effect in pycharm.
 
 Changable Parameter: 
 
@@ -41,5 +42,6 @@ Changable Parameter:
     
 (Above are the parameters that are tested to be save to change. I did not fully test the FEM implementation.) Additionally, current matplot grid is x(0,2) y(-1,1). If want a bigger grid manually change the value before time.sleep()
 
-Shape Matching: You can create your own object with particles similar to the way the current test cases are created. You can also test 4 of the existing test cases by change the parameter test_case.
+### Shape Matching: 
+You can create your own object with particles similar to the way the current test cases are created. You can also test 4 of the existing test cases by change the parameter test_case.
 (Note: if you want to create a new test case find a proper time step for avoiding explotion and add the call of init() in main function)
