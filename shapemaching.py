@@ -189,7 +189,7 @@ def substep():
 
 
 # init the window, canvas, scene and camerea
-window = ti.ui.Window("rigidbody", (1024, 1024), vsync=True)
+window = ti.ui.Window("shape matching demos", (1024, 1024))
 canvas = window.get_canvas()
 canvas.set_background_color((1.0, 1.0, 1.0))
 scene = ti.ui.Scene()
